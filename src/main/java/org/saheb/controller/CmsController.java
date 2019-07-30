@@ -16,6 +16,7 @@ public class CmsController {
 	
 	@GetMapping(value = "/members/{pageNum}")
 	public ResponseEntity<Employee> getPageContent(@PathVariable("pageNum") Integer pageNum) {
+		System.out.println("inside controller 1111");
 		Employee emp = cmsService.getPageContent(pageNum);
 		return new ResponseEntity<>(emp, HttpStatus.OK);
 	}

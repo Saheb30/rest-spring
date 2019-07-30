@@ -12,7 +12,7 @@ public class CmsListener implements ServletContextListener {
 	private CmsDao cmsDao;
 	@Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
-		System.out.println("inside CmsListener");
-        cmsDao.prepareData();
+		System.out.println("inside CmsListener::"+cmsDao);
+       // cmsDao.prepareData();
     }
 }

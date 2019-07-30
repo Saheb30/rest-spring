@@ -1,17 +1,20 @@
 package org.saheb.beans;
 
 public class Employee {
-	private int id;
+	private Integer id;
 	private String name;
 	public Employee(int id, String name) {
 		super();
 		this.id = id;
 		this.name = name;
 	}
-	public int getId() {
+	public Employee() {
+	}
+	
+	public Integer getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 	public String getName() {

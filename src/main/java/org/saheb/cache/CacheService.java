@@ -1,8 +1,8 @@
-package org.saheb.service;
+package org.saheb.cache;
 
 import org.saheb.beans.Employee;
 
-public interface CmsService {
+public interface CacheService {
 	public Employee getPageContent(int pageNum);
 	public void prepareData();
 	public boolean prepareDataWithoutCaching();
